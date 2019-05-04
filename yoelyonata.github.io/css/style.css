@@ -1,0 +1,26 @@
+header {
+  background-image: url("../img/Mountain.jpg");
+}
+.about {
+	vertical-align: middle;
+}
+h2{
+	margin-bottom: 100px;
+}
+
+h3{
+	text-align: center;
+}
+
+.border{
+	padding: 10px;
+}
+
+.id{
+	margin: -100px;
+}
+
+footer{
+	text-align: center;
+	word-spacing: 75px;
+}
