@@ -24,3 +24,9 @@ footer{
 	text-align: center;
 	word-spacing: 75px;
 }
+.modal-img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+   	text-align: center;
+    display: block;
+}
