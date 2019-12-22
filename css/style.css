@@ -31,6 +31,9 @@ footer{
     display: block;
 }
 
-p{
-	text-indent: 40px;
+.modal-content iframe{
+    margin: 0 auto;
+    padding-top: 20px;
+	padding-bottom: 20px;
+    display: block;
 }

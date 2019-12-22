@@ -18,22 +18,26 @@
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
 	$(document).ready(function(){
 	    /* Get iframe src attribute value i.e. YouTube video url
 	    and store it in a variable */
-	    var url = $("#cartoonVideo").attr('src');
+	    var url = $("#neurokineticvideo").attr('src');
 	    
 	    /* Assign empty url value to the iframe src attribute when
 	    modal hide, which stop the video playing */
 	    $("#NeuroKinetic_modal").on('hide.bs.modal', function(){
-	        $("#cartoonVideo").attr('src', '');
+	        $("#neurokineticvideo").attr('src', '');
 	    });
 	    
 	    /* Assign the initially stored url back to the iframe src
 	    attribute when modal is displayed again */
 	    $("#NeuroKinetic_modal").on('show.bs.modal', function(){
-	        $("#cartoonVideo").attr('src', url);
+	        $("#neurokineticvideo").attr('src', url);
 	    });
 	});
   </script>
@@ -146,9 +150,10 @@
             <img src="./img/N.png" alt="" height="200" width="200">
             <div class="card-body">
               <h4 class="card-title">
-              	<a href="#" data-toggle="modal" data-target="#NeuroKinetic_modal">NeuroKinetic</a>
+              	<a href="#NeuroKinetic_modal" data-toggle="modal" data-target="#NeuroKinetic_modal">NeuroKinetic</a>
               </h4>
               <p class="card-text"> Programmed an iOS application for Parkinson's patient to train their hand dexterity through daily exercises</p>
+              </div>
               <div class="modal fade" id="NeuroKinetic_modal">
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
@@ -156,13 +161,15 @@
                       <h2> NeuroKinetic </h2>
                     </div>
                     <div class="modal-body">
-                      
-                      <p> For our software engineering class, each group was tasked to developing an app to help Parkinson's disease patients to ease their life.</p>
+                     <div class = "modal-img">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Mk-ggkevi80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	</iframe>
+                      <figcaption><i>Video explaining Parkinson's and our iOS application</i></figcaption>
+                  	 </div>
+                      <p style="text-align: left; text-indent: 40px;"> For our software engineering class, each group was tasked to developing an app to help Parkinson's disease patients to ease their life. We decided to develop an app that allows Parkinson's patient to train their hand dexterity with daily routines. The three main features of our applications are: rhythmic tapping, handwriting and typing. Our application is developed on xCode using Swift. Through this project, we learned common software engineering practices such as the waterfall model, Scrum and Agile. Our group held regular meetings to catch up with each other on how the progress of our application is. We also learned how to use Git version control through this project.</p>
                     </div>
                   </div>
                 </div>
                </div>
-            </div>
           
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -255,13 +262,13 @@
                       	<img src="./img/netgear_team.jpg" height="520" width="720" class="center">
                       	<figcaption><i>Group picture of coop students that worked at Netgear during my time there</i></figcaption>
                   	  </div>
-                      <p> For my first coop job, I had the chance to work at Netgear Canada. Netgear is a globally known company for their computer networking products. The Netgear in the Richmond location was a part of the aircard department of Netgear. Aircards are portable mobile hotspots that attaches to 4G LTE network and shares wifi connection to nearby devices. </p>    
-                      <p> There were two main projects that were under development when I was working at Netgear, MR2100 and M5F. The MR2100 is a Gigabit LTE mobile router that supports up to 2Gbps speeds. However, I spent most of my time working on the M5F, which is the world's first 5G mobile hotspot developed for AT&T. As a Software Test Engineer, my main responsibilites include both software testing and firmware testing.Software testing includes testing display bugs and UI issues. I performed mostly firmware testing on the M5F during my work term. Firmware testing include band combination testing, wifi throughput testing and stability testing. From these testing responsibilities, I also learned a lot of network communicating protocols such as UDP and TCP. </p>
+                      <p style="text-align: left; text-indent: 40px;"> For my first coop job, I had the chance to work at Netgear Canada. Netgear is a globally known company for their computer networking products. The Netgear in the Richmond location was a part of the aircard department of Netgear. Aircards are portable mobile hotspots that attaches to 4G LTE network and shares wifi connection to nearby devices. </p>    
+                      <p style="text-align: left; text-indent: 40px;"> There were two main projects that were under development when I was working at Netgear, MR2100 and M5F. The MR2100 is a Gigabit LTE mobile router that supports up to 2Gbps speeds. However, I spent most of my time working on the M5F, which is the world's first 5G mobile hotspot developed for AT&T. As a Software Test Engineer, my main responsibilites include both software testing and firmware testing.Software testing includes testing display bugs and UI issues. I performed mostly firmware testing on the M5F during my work term. Firmware testing include band combination testing, wifi throughput testing and stability testing. From these testing responsibilities, I also learned a lot of network communicating protocols such as UDP and TCP. </p>
                       <div class = "modal-img">
                       	<img src="./img/m5f.jpg" class="center">
                       	<figcaption><i>M5F the world's first 5G mobile hotspot</i></figcaption>
                       </div>
-                      <p> 	Through my work term at Netgear there are lots of takeaways and skills I have acquired. I performed many regression testings as a part of my job. I had the opportunities of using their lab tools and also some python programming to create automated test scripts. Even though I have learned some of these skills from school, I believe working at Netgear further improves my proficiency and adds a lot more to my knowledge. Working at Netgear has taught me a lot about working under pressure, multitasking and having extra attention to details.</p>
+                      <p style="text-align: left; text-indent: 40px;">Through my work term at Netgear there are lots of takeaways and skills I have acquired. I performed many regression testings as a part of my job. I had the opportunities of using their lab tools and also some python programming to create automated test scripts. Even though I have learned some of these skills from school, I believe working at Netgear further improves my proficiency and adds a lot more to my knowledge. Working at Netgear has taught me a lot about working under pressure, multitasking and having extra attention to details.</p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +295,7 @@
                       	<img src="./img/vexiq.jpg" class="center">
                       	<figcaption><i>VEX IQ Robot built by a student</i></figcaption>
                       </div>
-                      <p> This has been my part-time job since the beginning of first year university. At Robokids, we teach students to learn how to build robots and program them. There are also coding for students and even 3D modelling. I teach students starting from grade 1 up to grade 10 students. The younger children mostly work with Lego WEDO for robotics and scratch for programming. Starting from Grade 4, they start using EV3 for their robotics. The senior students (grade 7 and older) gets a chence to use VEX IQ which is programmed in C. As a robotics instructor, my main responsibility is to teach them how to build, program and problem solving.</p>
+                      <p style="text-align: left; text-indent: 40px;"> This has been my part-time job since the beginning of first year university. At Robokids, we teach students to learn how to build robots and program them. There are also coding for students and even 3D modelling. I teach students starting from grade 1 up to grade 10 students. The younger children mostly work with Lego WEDO for robotics and scratch for programming. Starting from Grade 4, they start using EV3 for their robotics. The senior students (grade 7 and older) gets a chence to use VEX IQ which is programmed in C. As a robotics instructor, my main responsibility is to teach them how to build, program and problem solving.</p>
                     </div>
                   </div>
                 </div>
@@ -315,7 +322,7 @@
                       	<img src="./img/zwilling_knife.jpg" class="center">
                       	<figcaption><i>Zwilling's chef knife</i></figcaption>
                       </div>
-                      <p> Zwilling is a kitchenware retail store located at Metropolis at Metrotown. They sell a wide variety of kitchen utensils such as eating cutlery, woks, pots and knives. Zwilling's products are exceptionally high in quality. Zwilling is based in Germany and is most well known for their variety and quality of their knives. As a sales retail associate, I help with stocking in their back room and also helping customers with their purchases. I help promote their products to customer and assist them when needed.</p>
+                      <p style="text-align: left; text-indent: 40px;"> Zwilling is a kitchenware retail store located at Metropolis at Metrotown. They sell a wide variety of kitchen utensils such as eating cutlery, woks, pots and knives. Zwilling's products are exceptionally high in quality. Zwilling is based in Germany and is most well known for their variety and quality of their knives. As a sales retail associate, I help with stocking in their back room and also helping customers with their purchases. I help promote their products to customer and assist them when needed.</p>
                     </div>
                   </div>
                 </div>              
