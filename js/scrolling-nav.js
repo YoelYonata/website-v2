@@ -26,4 +26,11 @@
     offset: 56
   });
 
+  $(function(){
+    $('#NeuroKinetic_modal').modal({
+        show: false
+    }).on('hidden.bs.modal', function(){
+        $(this).find('neurokineticvideo')[0].pause();
+    });
+
 })(jQuery); // End of use strict

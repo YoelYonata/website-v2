@@ -27,12 +27,14 @@ footer{
 .modal-img {
 	padding-top: 20px;
 	padding-bottom: 20px;
-   	text-align: center;
+	height: auto;
+	max-width: 100%;
+	text-align: center;
     display: block;
 }
 
 .modal-content iframe{
-    margin: 0 auto;
+    margin: auto;
     padding-top: 20px;
 	padding-bottom: 20px;
     display: block;
